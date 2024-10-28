@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Styling for the navigation bar */
+.navbar a.active {
+    background-color: #0084ff; /* Highlight color for active section */
+}
+
+.navbar {
+    display: flex;
+    justify-content: left; 
+    background-color: #2e2e2e;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling for individual nav buttons */
+.navbar a {
+    color: rgb(255, 255, 255);
+    font: arial;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    background-color: #636262;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the buttons */
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Styling for the active button */
+.navbar a.active {
+    background-color: #0084ff; /* Highlight color for active section */
+}
+
+/* Section styling */
+.section {
+    padding: 100px;
+    margin-top: 60px; /* To offset the fixed navbar */
+    height: 600px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Start hidden */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Show the active slide */
+}
+
+.carousel-item img {
+    width: 50%; 
+    height: auto;
+    margin: 0; 
+    padding: 0; 
+}
+
+.carousel-text {
+    width: 60%; /* Use the remaining width for the text */
+    margin: 0; /* Remove any default margins */
+    padding: 0 10px; /* Add only minimal padding on the left/right */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    align-self: flex-start;
+    
+}
+
+.carousel-item.active {
+    opacity: 1; /* Show active slide */
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure buttons are above other content */
+}
+
+button.prev {
+    left: 10px; /* Position for previous button */
+}
+
+button.next {
+    right: 10px; /* Position for next button */
+}
+.carousel-text h2 {
+font-size: 50px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bolder;
+margin: 1;
+
+}
+#paragraf-text {
+justify-self: auto;
+font-size: 19px;
+
+}
+#text-black{
+    font-size: 19px;
+    color: #000000;
+}
+#title-black{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #000000;
+
+}
+#image-smaller{
+    width:50%;
+}
+a {
+    color:aqua;
+
+}
+
+.content {
+    padding-right: 200px;
+    border: 0;
+    position: relative;
+}
+
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin-right: 20px; /* Space between video and images */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjusted to fill the container */
+    height: 100%; /* Adjusted to fill the container */
+}
+
+
+
